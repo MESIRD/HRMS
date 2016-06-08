@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CSVResolver.h"
+#import "CSVModel.h"
+#import "Person.h"
 
 @implementation ViewController
 
@@ -14,6 +17,8 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    CSVModel *model = [CSVResolver resolveFromContentsOfFile:@"/Users/xujie/Desktop/test.csv" toModelClass:[Person class]];
+    NSLog(@"%@", model);
 }
 
 - (void)setRepresentedObject:(id)representedObject {

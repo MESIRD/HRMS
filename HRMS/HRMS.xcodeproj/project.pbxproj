@@ -14,6 +14,9 @@
 		D742F9961D05DF970036B273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D742F9941D05DF970036B273 /* Main.storyboard */; };
 		D742F9A01D05E2BE0036B273 /* HRMStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F99F1D05E2BE0036B273 /* HRMStaff.m */; };
 		D742F9A31D05E3670036B273 /* HRMDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F9A21D05E3670036B273 /* HRMDepartment.m */; };
+		F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74A1D07ACA500BB31E5 /* CSVResolver.m */; };
+		F545F74E1D07ACE700BB31E5 /* CSVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74D1D07ACE700BB31E5 /* CSVModel.m */; };
+		F545F7511D07AE8F00BB31E5 /* CSVDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		D742F99F1D05E2BE0036B273 /* HRMStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMStaff.m; path = Models/HRMStaff.m; sourceTree = "<group>"; };
 		D742F9A11D05E3670036B273 /* HRMDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMDepartment.h; path = Models/HRMDepartment.h; sourceTree = "<group>"; };
 		D742F9A21D05E3670036B273 /* HRMDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMDepartment.m; path = Models/HRMDepartment.m; sourceTree = "<group>"; };
+		F545F7491D07ACA500BB31E5 /* CSVResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVResolver.h; path = Utils/CSVResolver/CSVResolver.h; sourceTree = "<group>"; };
+		F545F74A1D07ACA500BB31E5 /* CSVResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVResolver.m; path = Utils/CSVResolver/CSVResolver.m; sourceTree = "<group>"; };
+		F545F74C1D07ACE700BB31E5 /* CSVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVModel.h; path = Utils/CSVResolver/CSVModel.h; sourceTree = "<group>"; };
+		F545F74D1D07ACE700BB31E5 /* CSVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVModel.m; path = Utils/CSVResolver/CSVModel.m; sourceTree = "<group>"; };
+		F545F74F1D07AE8F00BB31E5 /* CSVDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVDataObject.h; path = Utils/CSVResolver/CSVDataObject.h; sourceTree = "<group>"; };
+		F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVDataObject.m; path = Utils/CSVResolver/CSVDataObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 		D742F9881D05DF970036B273 /* HRMS */ = {
 			isa = PBXGroup;
 			children = (
+				F545F7481D07AC7600BB31E5 /* Utils */,
 				D742F99D1D05E2780036B273 /* Models */,
 				D742F9891D05DF970036B273 /* AppDelegate.h */,
 				D742F98A1D05DF970036B273 /* AppDelegate.m */,
@@ -92,6 +102,27 @@
 				D742F9A21D05E3670036B273 /* HRMDepartment.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F545F7471D07AC6300BB31E5 /* CSVResolver */ = {
+			isa = PBXGroup;
+			children = (
+				F545F74C1D07ACE700BB31E5 /* CSVModel.h */,
+				F545F74D1D07ACE700BB31E5 /* CSVModel.m */,
+				F545F7491D07ACA500BB31E5 /* CSVResolver.h */,
+				F545F74A1D07ACA500BB31E5 /* CSVResolver.m */,
+				F545F74F1D07AE8F00BB31E5 /* CSVDataObject.h */,
+				F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */,
+			);
+			name = CSVResolver;
+			sourceTree = "<group>";
+		};
+		F545F7481D07AC7600BB31E5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F545F7471D07AC6300BB31E5 /* CSVResolver */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */,
 				D742F9A31D05E3670036B273 /* HRMDepartment.m in Sources */,
 				D742F9A01D05E2BE0036B273 /* HRMStaff.m in Sources */,
 				D742F9911D05DF970036B273 /* ViewController.m in Sources */,
 				D742F98E1D05DF970036B273 /* main.m in Sources */,
+				F545F74E1D07ACE700BB31E5 /* CSVModel.m in Sources */,
 				D742F98B1D05DF970036B273 /* AppDelegate.m in Sources */,
+				F545F7511D07AE8F00BB31E5 /* CSVDataObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +343,7 @@
 				D742F99C1D05DF970036B273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
