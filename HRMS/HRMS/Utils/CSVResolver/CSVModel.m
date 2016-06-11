@@ -10,6 +10,7 @@
 
 @implementation CSVModel
 
+/** overwrite description method, if you want to print every object please override description method in each object class*/
 - (NSString *)description {
     
     NSMutableString *desc = [NSMutableString string];

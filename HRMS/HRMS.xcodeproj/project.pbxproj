@@ -7,32 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762F64C22E02624C2D52AC33 /* libPods-HRMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC58B9FDCB9BF145C9EBB2 /* libPods-HRMS.a */; };
+		D71AF45E1D0A805600B632B2 /* HRMFileImportView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AF45D1D0A805600B632B2 /* HRMFileImportView.m */; };
+		D71AF4621D0A807F00B632B2 /* HRMImportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AF4611D0A807F00B632B2 /* HRMImportViewController.m */; };
+		D71AF46F1D0A84C600B632B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AF46C1D0A84C600B632B2 /* main.m */; };
+		D71AF4701D0A84CD00B632B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D71AF4721D0A84CD00B632B2 /* Localizable.strings */; };
+		D71AF4741D0A84EA00B632B2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D71AF4731D0A84EA00B632B2 /* Info.plist */; };
+		D71AF47C1D0A8B5B00B632B2 /* HRMColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AF47B1D0A8B5B00B632B2 /* HRMColoredView.m */; };
+		D71AF4801D0A8B8900B632B2 /* NSColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AF47F1D0A8B8900B632B2 /* NSColor+Hex.m */; };
+		D71D6B221D0BFD5500FC0375 /* HRMStaffCSVDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D71D6B211D0BFD5500FC0375 /* HRMStaffCSVDataObject.m */; };
+		D71D6B281D0C040900FC0375 /* HRMImportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71D6B271D0C040900FC0375 /* HRMImportingViewController.m */; };
+		D71D6B2B1D0C064200FC0375 /* HRMImportingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71D6B2A1D0C064200FC0375 /* HRMImportingView.m */; };
+		D71D6B2F1D0C0C2E00FC0375 /* HRMMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71D6B2E1D0C0C2E00FC0375 /* HRMMainWindowController.m */; };
 		D742F98B1D05DF970036B273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F98A1D05DF970036B273 /* AppDelegate.m */; };
-		D742F98E1D05DF970036B273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F98D1D05DF970036B273 /* main.m */; };
-		D742F9911D05DF970036B273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F9901D05DF970036B273 /* ViewController.m */; };
 		D742F9931D05DF970036B273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D742F9921D05DF970036B273 /* Assets.xcassets */; };
 		D742F9961D05DF970036B273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D742F9941D05DF970036B273 /* Main.storyboard */; };
 		D742F9A01D05E2BE0036B273 /* HRMStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F99F1D05E2BE0036B273 /* HRMStaff.m */; };
 		D742F9A31D05E3670036B273 /* HRMDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = D742F9A21D05E3670036B273 /* HRMDepartment.m */; };
+		D7A2B46B1D0AD18900D1FC66 /* HRMCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B46A1D0AD18900D1FC66 /* HRMCompany.m */; };
+		D7A2B46F1D0B2A7000D1FC66 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B46E1D0B2A7000D1FC66 /* NSString+Date.m */; };
+		D7A2B4781D0B2F9C00D1FC66 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B4771D0B2F9C00D1FC66 /* NSString+Validation.m */; };
+		D7A2B47B1D0B370100D1FC66 /* HRMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B47A1D0B370100D1FC66 /* HRMMoney.m */; };
+		D7A2B47E1D0B405B00D1FC66 /* HRMWelfare.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B47D1D0B405B00D1FC66 /* HRMWelfare.m */; };
+		D7A2B4811D0BAE5700D1FC66 /* HRMJobStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B4801D0BAE5700D1FC66 /* HRMJobStatus.m */; };
 		F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74A1D07ACA500BB31E5 /* CSVResolver.m */; };
 		F545F74E1D07ACE700BB31E5 /* CSVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74D1D07ACE700BB31E5 /* CSVModel.m */; };
 		F545F7511D07AE8F00BB31E5 /* CSVDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F39E7C9DE9CAF1824100886 /* Pods-HRMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRMS/Pods-HRMS.debug.xcconfig"; sourceTree = "<group>"; };
+		3FBC58B9FDCB9BF145C9EBB2 /* libPods-HRMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRMS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D339176AC7F1E51662AD6898 /* Pods-HRMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRMS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRMS/Pods-HRMS.release.xcconfig"; sourceTree = "<group>"; };
+		D71AF45C1D0A805600B632B2 /* HRMFileImportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMFileImportView.h; path = Import/View/HRMFileImportView.h; sourceTree = "<group>"; };
+		D71AF45D1D0A805600B632B2 /* HRMFileImportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMFileImportView.m; path = Import/View/HRMFileImportView.m; sourceTree = "<group>"; };
+		D71AF4601D0A807F00B632B2 /* HRMImportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMImportViewController.h; path = Import/Controller/HRMImportViewController.h; sourceTree = "<group>"; };
+		D71AF4611D0A807F00B632B2 /* HRMImportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMImportViewController.m; path = Import/Controller/HRMImportViewController.m; sourceTree = "<group>"; };
+		D71AF46C1D0A84C600B632B2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SupportingFiles/main.m; sourceTree = "<group>"; };
+		D71AF4711D0A84CD00B632B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D71AF4731D0A84EA00B632B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D71AF4751D0A854200B632B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D71AF4761D0A855500B632B2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D71AF47A1D0A8B5B00B632B2 /* HRMColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMColoredView.h; path = Common/View/HRMColoredView.h; sourceTree = "<group>"; };
+		D71AF47B1D0A8B5B00B632B2 /* HRMColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMColoredView.m; path = Common/View/HRMColoredView.m; sourceTree = "<group>"; };
+		D71AF47E1D0A8B8900B632B2 /* NSColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Hex.h"; path = "Utils/Color/NSColor+Hex.h"; sourceTree = "<group>"; };
+		D71AF47F1D0A8B8900B632B2 /* NSColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Hex.m"; path = "Utils/Color/NSColor+Hex.m"; sourceTree = "<group>"; };
+		D71D6B201D0BFD5500FC0375 /* HRMStaffCSVDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMStaffCSVDataObject.h; path = Models/HRMStaffCSVDataObject.h; sourceTree = "<group>"; };
+		D71D6B211D0BFD5500FC0375 /* HRMStaffCSVDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMStaffCSVDataObject.m; path = Models/HRMStaffCSVDataObject.m; sourceTree = "<group>"; };
+		D71D6B261D0C040900FC0375 /* HRMImportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMImportingViewController.h; path = Import/Controller/HRMImportingViewController.h; sourceTree = "<group>"; };
+		D71D6B271D0C040900FC0375 /* HRMImportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMImportingViewController.m; path = Import/Controller/HRMImportingViewController.m; sourceTree = "<group>"; };
+		D71D6B291D0C064200FC0375 /* HRMImportingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMImportingView.h; path = Import/View/HRMImportingView.h; sourceTree = "<group>"; };
+		D71D6B2A1D0C064200FC0375 /* HRMImportingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMImportingView.m; path = Import/View/HRMImportingView.m; sourceTree = "<group>"; };
+		D71D6B2D1D0C0C2E00FC0375 /* HRMMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMMainWindowController.h; path = Window/HRMMainWindowController.h; sourceTree = "<group>"; };
+		D71D6B2E1D0C0C2E00FC0375 /* HRMMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMMainWindowController.m; path = Window/HRMMainWindowController.m; sourceTree = "<group>"; };
 		D742F9861D05DF970036B273 /* HRMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D742F9891D05DF970036B273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D742F98A1D05DF970036B273 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D742F98D1D05DF970036B273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D742F98F1D05DF970036B273 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D742F9901D05DF970036B273 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D742F9921D05DF970036B273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D742F9951D05DF970036B273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D742F9971D05DF970036B273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D742F99E1D05E2BE0036B273 /* HRMStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMStaff.h; path = Models/HRMStaff.h; sourceTree = "<group>"; };
 		D742F99F1D05E2BE0036B273 /* HRMStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMStaff.m; path = Models/HRMStaff.m; sourceTree = "<group>"; };
 		D742F9A11D05E3670036B273 /* HRMDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMDepartment.h; path = Models/HRMDepartment.h; sourceTree = "<group>"; };
 		D742F9A21D05E3670036B273 /* HRMDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMDepartment.m; path = Models/HRMDepartment.m; sourceTree = "<group>"; };
+		D7A2B4691D0AD18900D1FC66 /* HRMCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMCompany.h; path = Models/HRMCompany.h; sourceTree = "<group>"; };
+		D7A2B46A1D0AD18900D1FC66 /* HRMCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMCompany.m; path = Models/HRMCompany.m; sourceTree = "<group>"; };
+		D7A2B46D1D0B2A7000D1FC66 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Date.h"; path = "Utils/Date/NSString+Date.h"; sourceTree = "<group>"; };
+		D7A2B46E1D0B2A7000D1FC66 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Date.m"; path = "Utils/Date/NSString+Date.m"; sourceTree = "<group>"; };
+		D7A2B4741D0B2ECE00D1FC66 /* HRMSPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRMSPrefix.pch; path = SupportingFiles/HRMSPrefix.pch; sourceTree = "<group>"; };
+		D7A2B4761D0B2F9C00D1FC66 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Validation.h"; path = "Utils/String/NSString+Validation.h"; sourceTree = "<group>"; };
+		D7A2B4771D0B2F9C00D1FC66 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validation.m"; path = "Utils/String/NSString+Validation.m"; sourceTree = "<group>"; };
+		D7A2B4791D0B370100D1FC66 /* HRMMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMMoney.h; path = Common/Model/HRMMoney.h; sourceTree = "<group>"; };
+		D7A2B47A1D0B370100D1FC66 /* HRMMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMMoney.m; path = Common/Model/HRMMoney.m; sourceTree = "<group>"; };
+		D7A2B47C1D0B405B00D1FC66 /* HRMWelfare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMWelfare.h; path = Models/HRMWelfare.h; sourceTree = "<group>"; };
+		D7A2B47D1D0B405B00D1FC66 /* HRMWelfare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMWelfare.m; path = Models/HRMWelfare.m; sourceTree = "<group>"; };
+		D7A2B47F1D0BAE5700D1FC66 /* HRMJobStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMJobStatus.h; path = Models/HRMJobStatus.h; sourceTree = "<group>"; };
+		D7A2B4801D0BAE5700D1FC66 /* HRMJobStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMJobStatus.m; path = Models/HRMJobStatus.m; sourceTree = "<group>"; };
 		F545F7491D07ACA500BB31E5 /* CSVResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVResolver.h; path = Utils/CSVResolver/CSVResolver.h; sourceTree = "<group>"; };
 		F545F74A1D07ACA500BB31E5 /* CSVResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVResolver.m; path = Utils/CSVResolver/CSVResolver.m; sourceTree = "<group>"; };
 		F545F74C1D07ACE700BB31E5 /* CSVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVModel.h; path = Utils/CSVResolver/CSVModel.h; sourceTree = "<group>"; };
@@ -46,17 +94,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762F64C22E02624C2D52AC33 /* libPods-HRMS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F90A49212D9F1899DC04EDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC58B9FDCB9BF145C9EBB2 /* libPods-HRMS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEBBEDBE1C990537C214A4F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F39E7C9DE9CAF1824100886 /* Pods-HRMS.debug.xcconfig */,
+				D339176AC7F1E51662AD6898 /* Pods-HRMS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D71AF4521D0A7A3E00B632B2 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				D71AF45B1D0A801B00B632B2 /* View */,
+				D71AF45A1D0A801000B632B2 /* Controller */,
+			);
+			name = Import;
+			sourceTree = "<group>";
+		};
+		D71AF4561D0A7E5400B632B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2B4701D0B2DBA00D1FC66 /* Model */,
+				D71AF4791D0A8B4100B632B2 /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D71AF45A1D0A801000B632B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D71D6B261D0C040900FC0375 /* HRMImportingViewController.h */,
+				D71D6B271D0C040900FC0375 /* HRMImportingViewController.m */,
+				D71AF4601D0A807F00B632B2 /* HRMImportViewController.h */,
+				D71AF4611D0A807F00B632B2 /* HRMImportViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D71AF45B1D0A801B00B632B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D71AF45C1D0A805600B632B2 /* HRMFileImportView.h */,
+				D71AF45D1D0A805600B632B2 /* HRMFileImportView.m */,
+				D71D6B291D0C064200FC0375 /* HRMImportingView.h */,
+				D71D6B2A1D0C064200FC0375 /* HRMImportingView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D71AF4791D0A8B4100B632B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D71AF47A1D0A8B5B00B632B2 /* HRMColoredView.h */,
+				D71AF47B1D0A8B5B00B632B2 /* HRMColoredView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D71AF47D1D0A8B6400B632B2 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				D71AF47E1D0A8B8900B632B2 /* NSColor+Hex.h */,
+				D71AF47F1D0A8B8900B632B2 /* NSColor+Hex.m */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		D71D6B2C1D0C0C1000FC0375 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				D71D6B2D1D0C0C2E00FC0375 /* HRMMainWindowController.h */,
+				D71D6B2E1D0C0C2E00FC0375 /* HRMMainWindowController.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
 		D742F97D1D05DF970036B273 = {
 			isa = PBXGroup;
 			children = (
 				D742F9881D05DF970036B273 /* HRMS */,
 				D742F9871D05DF970036B273 /* Products */,
+				CEBBEDBE1C990537C214A4F5 /* Pods */,
+				2F90A49212D9F1899DC04EDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,15 +206,14 @@
 		D742F9881D05DF970036B273 /* HRMS */ = {
 			isa = PBXGroup;
 			children = (
+				D71D6B2C1D0C0C1000FC0375 /* Window */,
+				D71AF4561D0A7E5400B632B2 /* Common */,
+				D71AF4521D0A7A3E00B632B2 /* Import */,
 				F545F7481D07AC7600BB31E5 /* Utils */,
 				D742F99D1D05E2780036B273 /* Models */,
 				D742F9891D05DF970036B273 /* AppDelegate.h */,
 				D742F98A1D05DF970036B273 /* AppDelegate.m */,
-				D742F98F1D05DF970036B273 /* ViewController.h */,
-				D742F9901D05DF970036B273 /* ViewController.m */,
-				D742F9921D05DF970036B273 /* Assets.xcassets */,
 				D742F9941D05DF970036B273 /* Main.storyboard */,
-				D742F9971D05DF970036B273 /* Info.plist */,
 				D742F98C1D05DF970036B273 /* Supporting Files */,
 			);
 			path = HRMS;
@@ -88,7 +222,11 @@
 		D742F98C1D05DF970036B273 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D742F98D1D05DF970036B273 /* main.m */,
+				D7A2B4741D0B2ECE00D1FC66 /* HRMSPrefix.pch */,
+				D71AF4731D0A84EA00B632B2 /* Info.plist */,
+				D71AF4721D0A84CD00B632B2 /* Localizable.strings */,
+				D71AF46C1D0A84C600B632B2 /* main.m */,
+				D742F9921D05DF970036B273 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -100,8 +238,43 @@
 				D742F99F1D05E2BE0036B273 /* HRMStaff.m */,
 				D742F9A11D05E3670036B273 /* HRMDepartment.h */,
 				D742F9A21D05E3670036B273 /* HRMDepartment.m */,
+				D7A2B4691D0AD18900D1FC66 /* HRMCompany.h */,
+				D7A2B46A1D0AD18900D1FC66 /* HRMCompany.m */,
+				D7A2B47C1D0B405B00D1FC66 /* HRMWelfare.h */,
+				D7A2B47D1D0B405B00D1FC66 /* HRMWelfare.m */,
+				D7A2B47F1D0BAE5700D1FC66 /* HRMJobStatus.h */,
+				D7A2B4801D0BAE5700D1FC66 /* HRMJobStatus.m */,
+				D71D6B201D0BFD5500FC0375 /* HRMStaffCSVDataObject.h */,
+				D71D6B211D0BFD5500FC0375 /* HRMStaffCSVDataObject.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D7A2B46C1D0B2A4800D1FC66 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2B46D1D0B2A7000D1FC66 /* NSString+Date.h */,
+				D7A2B46E1D0B2A7000D1FC66 /* NSString+Date.m */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		D7A2B4701D0B2DBA00D1FC66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2B4791D0B370100D1FC66 /* HRMMoney.h */,
+				D7A2B47A1D0B370100D1FC66 /* HRMMoney.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D7A2B4751D0B2F8100D1FC66 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2B4761D0B2F9C00D1FC66 /* NSString+Validation.h */,
+				D7A2B4771D0B2F9C00D1FC66 /* NSString+Validation.m */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 		F545F7471D07AC6300BB31E5 /* CSVResolver */ = {
@@ -109,10 +282,10 @@
 			children = (
 				F545F74C1D07ACE700BB31E5 /* CSVModel.h */,
 				F545F74D1D07ACE700BB31E5 /* CSVModel.m */,
-				F545F7491D07ACA500BB31E5 /* CSVResolver.h */,
-				F545F74A1D07ACA500BB31E5 /* CSVResolver.m */,
 				F545F74F1D07AE8F00BB31E5 /* CSVDataObject.h */,
 				F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */,
+				F545F7491D07ACA500BB31E5 /* CSVResolver.h */,
+				F545F74A1D07ACA500BB31E5 /* CSVResolver.m */,
 			);
 			name = CSVResolver;
 			sourceTree = "<group>";
@@ -120,6 +293,9 @@
 		F545F7481D07AC7600BB31E5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D7A2B4751D0B2F8100D1FC66 /* String */,
+				D7A2B46C1D0B2A4800D1FC66 /* Date */,
+				D71AF47D1D0A8B6400B632B2 /* Color */,
 				F545F7471D07AC6300BB31E5 /* CSVResolver */,
 			);
 			name = Utils;
@@ -132,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D742F99A1D05DF970036B273 /* Build configuration list for PBXNativeTarget "HRMS" */;
 			buildPhases = (
+				3CCE573A5A07A341792EE6E6 /* Check Pods Manifest.lock */,
 				D742F9821D05DF970036B273 /* Sources */,
 				D742F9831D05DF970036B273 /* Frameworks */,
 				D742F9841D05DF970036B273 /* Resources */,
+				AA24889127997C8B661BFDB4 /* Embed Pods Frameworks */,
+				8E4FE77CB8A05CF658940DC6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,7 +344,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				"zh-Hans",
 			);
 			mainGroup = D742F97D1D05DF970036B273;
 			productRefGroup = D742F9871D05DF970036B273 /* Products */;
@@ -182,36 +361,109 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71AF4741D0A84EA00B632B2 /* Info.plist in Resources */,
 				D742F9931D05DF970036B273 /* Assets.xcassets in Resources */,
+				D71AF4701D0A84CD00B632B2 /* Localizable.strings in Resources */,
 				D742F9961D05DF970036B273 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CCE573A5A07A341792EE6E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4FE77CB8A05CF658940DC6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRMS/Pods-HRMS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA24889127997C8B661BFDB4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRMS/Pods-HRMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D742F9821D05DF970036B273 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A2B4781D0B2F9C00D1FC66 /* NSString+Validation.m in Sources */,
+				D71D6B2F1D0C0C2E00FC0375 /* HRMMainWindowController.m in Sources */,
 				F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */,
+				D7A2B46F1D0B2A7000D1FC66 /* NSString+Date.m in Sources */,
+				D71D6B281D0C040900FC0375 /* HRMImportingViewController.m in Sources */,
 				D742F9A31D05E3670036B273 /* HRMDepartment.m in Sources */,
+				D7A2B47E1D0B405B00D1FC66 /* HRMWelfare.m in Sources */,
+				D7A2B47B1D0B370100D1FC66 /* HRMMoney.m in Sources */,
 				D742F9A01D05E2BE0036B273 /* HRMStaff.m in Sources */,
-				D742F9911D05DF970036B273 /* ViewController.m in Sources */,
-				D742F98E1D05DF970036B273 /* main.m in Sources */,
+				D71D6B2B1D0C064200FC0375 /* HRMImportingView.m in Sources */,
+				D71AF4621D0A807F00B632B2 /* HRMImportViewController.m in Sources */,
 				F545F74E1D07ACE700BB31E5 /* CSVModel.m in Sources */,
+				D7A2B4811D0BAE5700D1FC66 /* HRMJobStatus.m in Sources */,
+				D71AF45E1D0A805600B632B2 /* HRMFileImportView.m in Sources */,
 				D742F98B1D05DF970036B273 /* AppDelegate.m in Sources */,
+				D71AF47C1D0A8B5B00B632B2 /* HRMColoredView.m in Sources */,
+				D71AF46F1D0A84C600B632B2 /* main.m in Sources */,
+				D71D6B221D0BFD5500FC0375 /* HRMStaffCSVDataObject.m in Sources */,
+				D7A2B46B1D0AD18900D1FC66 /* HRMCompany.m in Sources */,
 				F545F7511D07AE8F00BB31E5 /* CSVDataObject.m in Sources */,
+				D71AF4801D0A8B8900B632B2 /* NSColor+Hex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D71AF4721D0A84CD00B632B2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D71AF4711D0A84CD00B632B2 /* en */,
+				D71AF4761D0A855500B632B2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		D742F9941D05DF970036B273 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D742F9951D05DF970036B273 /* Base */,
+				D71AF4751D0A854200B632B2 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -246,6 +498,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HRMS/SupportingFiles/HRMSPrefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -288,6 +542,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HRMS/SupportingFiles/HRMSPrefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -302,6 +558,7 @@
 		};
 		D742F99B1D05DF970036B273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F39E7C9DE9CAF1824100886 /* Pods-HRMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -314,6 +571,7 @@
 		};
 		D742F99C1D05DF970036B273 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D339176AC7F1E51662AD6898 /* Pods-HRMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

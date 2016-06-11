@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  HRMS
+
+  Created by mesird on 6/10/16.
+  Copyright © 2016 mesird. All rights reserved.
+*/
+
+
+// import view
+"firstTime"         = "First time using HRMS?\rStart with importing your data!";
+"importPlaceholder" = "drag your file here";
+"importDetail"      = "only CSV type is acceptable at present";
+"importing"         = "importing...";
+
+// importing view
+"importingGuide"    = "Importing and translating your data...";
+
+// job statuses
+"jobStatusProbation" = "probation";
+"jobStatusFormal"    = "formal";
+"jobStatusOffJob"    = "off job";

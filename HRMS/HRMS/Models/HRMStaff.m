@@ -8,6 +8,16 @@
 
 #import "HRMStaff.h"
 
+#import "HRMDepartment.h"
+#import "HRMJobStatus.h"
+#import "HRMCompany.h"
+#import "HRMWelfare.h"
+#import "HRMMoney.h"
+
+#import "NSString+Date.h"
+
 @implementation HRMStaff
+
+
 
 @end

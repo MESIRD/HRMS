@@ -1,0 +1,17 @@
+//
+//  HRMSPrefix.pch
+//  HRMS
+//
+//  Created by mesird on 6/11/16.
+//  Copyright © 2016 mesird. All rights reserved.
+//
+
+#ifndef HRMSPrefix_pch
+#define HRMSPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "NSString+validation.h"
+
+#endif /* HRMSPrefix_pch */

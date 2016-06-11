@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  HRMS
+
+  Created by mesird on 6/10/16.
+  Copyright © 2016 mesird. All rights reserved.
+*/
+
+// 导入视图
+"firstTime"         = "首次使用人事管理系统？\r从导入数据开始吧！";
+"importPlaceholder" = "将文件拖拽到这里";
+"importDetail"      = "目前只支持CSV格式文件";
+"importing"         = "正在导入中...";
+
+// importing view
+"importingGuide"    = "正在导入数据并分析中...";
+
+// 就职状态
+"jobStatusProbation" = "试用";
+"jobStatusFormal"    = "正式";
+"jobStatusOffJob"    = "离职";
