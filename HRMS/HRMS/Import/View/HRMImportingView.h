@@ -10,4 +10,7 @@
 
 @interface HRMImportingView : HRMColoredView
 
+@property (weak) IBOutlet NSTextField         *guideTextField;
+@property (weak) IBOutlet NSProgressIndicator *progressIndicator;
+
 @end

@@ -10,10 +10,26 @@
 
 @implementation HRMImportingView
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
+- (void)awakeFromNib {
     
-    // Drawing code here.
+    _guideTextField.stringValue = NSLocalizedString(@"importingGuide", nil);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self addProgress];
+    });
+}
+
+- (void)addProgress {
+    
+    while (_progressIndicator.doubleValue < 100.0f) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            double progress = _progressIndicator.doubleValue;
+            double randomNumber = rand() % 5;
+            progress += randomNumber;
+            _progressIndicator.doubleValue = progress;
+            sleep(0.3f);
+        });
+    }
 }
 
 @end

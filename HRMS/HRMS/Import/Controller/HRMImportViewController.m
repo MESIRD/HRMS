@@ -8,19 +8,19 @@
 
 #import "HRMImportViewController.h"
 
-#import "CSVResolver.h"
-#import "CSVModel.h"
-#import "NSColor+Hex.h"
 #import "HRMFileImportView.h"
 #import "HRMImportingView.h"
+
+#import "CSVResolver.h"
+#import "CSVModel.h"
 #import "HRMStaffCSVDataObject.h"
 
 @interface HRMImportViewController () <NSTextFieldDelegate>
 
-@property (weak) IBOutlet NSTextField *guideTextField;
-@property (weak) IBOutlet NSTextField *fileImportTextField;
-@property (weak) IBOutlet NSTextField *fileImportPlaceholderTextField;
-@property (weak) IBOutlet NSTextField *detailTextField;
+@property (nonatomic, strong) NSView *currentView;
+
+@property (nonatomic, strong) HRMFileImportView *fileImportView;
+@property (nonatomic, strong) HRMImportingView  *importingView;
 
 @property (assign) BOOL isImported;
 
@@ -28,29 +28,29 @@
 
 @implementation HRMImportViewController
 
-static NSString *const kExtentionTypeCSV = @"csv";
+- (HRMImportingView *)importingView {
+    
+    if (!_importingView) {
+        _importingView = [[HRMImportingView alloc] initWithFrame:CGRectMake(0, 0, WINDOW_SIZE.width, WINDOW_SIZE.height)];
+    }
+    return _importingView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here
     
-    _guideTextField.stringValue = NSLocalizedString(@"firstTime", nil);
+}
+
+- (void)configureUI {
     
-    _fileImportTextField.layer.borderWidth = 0.5f;
-    _fileImportTextField.layer.borderColor = [NSColor colorWithHex:0xBDBDBD].CGColor;
-    _fileImportTextField.layer.cornerRadius = 4.0f;
-    _fileImportTextField.layer.masksToBounds = YES;
-    _fileImportTextField.delegate = self;
-    
-    _fileImportPlaceholderTextField.stringValue = NSLocalizedString(@"importPlaceholder", nil);
-    
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init] ;
-    [paragraphStyle setAlignment:NSTextAlignmentCenter];
-    NSString *detailText = NSLocalizedString(@"importDetail", nil);
-    NSMutableAttributedString *attributedDetailText = [[NSMutableAttributedString alloc] initWithString:detailText attributes:@{NSParagraphStyleAttributeName:paragraphStyle}];
-    NSRange typeRange = [detailText rangeOfString:@"CSV"];
-    [attributedDetailText addAttributes:@{NSForegroundColorAttributeName:[NSColor colorWithHex:0xFF3F36]} range:typeRange];
-    _detailTextField.attributedStringValue = attributedDetailText;
+    NSArray *objects = [NSArray array];
+    if ([[NSBundle mainBundle] loadNibNamed:@"HRMFileImportView" owner:self topLevelObjects:&objects]) {
+        _fileImportView = [[HRMFileImportView alloc] initWithFrame:CGRectMake(0, 0, WINDOW_SIZE.width, WINDOW_SIZE.height)];
+        _fileImportView.fileImportTextField.delegate = self;
+        _currentView = _fileImportView;
+        [self.view addSubview:_fileImportView];
+    }
     
     _isImported = NO;
 }
@@ -64,29 +64,31 @@ static NSString *const kExtentionTypeCSV = @"csv";
     if ( [filePath isEmpty]) {
         return;
     }
-    if ( [self isValidFilePath:filePath]) {
+    if ( [filePath isValidPath]) {
         CSVModel *model = [CSVResolver resolveFromContentsOfFile:filePath toModelClass:[HRMStaffCSVDataObject class]];
         // store data into database
         // <#FIXME#>
         
-        _fileImportPlaceholderTextField.stringValue = NSLocalizedString(@"importing", nil);
+        _fileImportView.fileImportPlaceholderTextField.stringValue = NSLocalizedString(@"importing", nil);
         
         // go to importing view
-        
+//        [self.view addSubview:self.importingView];
+        [self rightShiftView:self.importingView];
     }
-    _fileImportTextField.stringValue = @"";
+    _fileImportView.fileImportTextField.stringValue = @"";
 }
 
-#pragma Validation
-
-- (BOOL)isValidFilePath:(NSString *)path {
+- (void)rightShiftView:(NSView *)view {
     
-    NSString *tempPath = [path stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *extension = [tempPath pathExtension];
-    if ( ![extension isEqualToString:kExtentionTypeCSV] && ![extension isEqualToString:[kExtentionTypeCSV uppercaseString]]) {
-        return NO;
-    }
-    return YES;
+    NSRect currentFrame = _currentView.frame;
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:_currentView forKey:NSViewAnimationTargetKey];
+    [dict setObject:[NSValue valueWithRect:currentFrame] forKey:NSViewAnimationStartFrameKey];
+    currentFrame.origin.x = -WINDOW_SIZE.width;
+    [dict setObject:[NSValue valueWithRect:currentFrame] forKey:NSViewAnimationEndFrameKey];
+    [dict setObject:NSViewAnimationFadeOutEffect forKey:NSViewAnimationEffectKey];
+    NSViewAnimation *animation = [[NSViewAnimation alloc] initWithViewAnimations:[NSArray arrayWithObject:dict]];
+    [animation startAnimation];
 }
 
 @end

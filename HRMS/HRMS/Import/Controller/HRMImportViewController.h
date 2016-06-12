@@ -10,4 +10,6 @@
 
 @interface HRMImportViewController : NSViewController
 
+- (void)configureUI;
+
 @end

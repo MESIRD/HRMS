@@ -10,4 +10,9 @@
 
 @interface HRMFileImportView : HRMColoredView
 
+@property (weak) IBOutlet NSTextField *guideTextField;
+@property (weak) IBOutlet NSTextField *fileImportTextField;
+@property (weak) IBOutlet NSTextField *fileImportPlaceholderTextField;
+@property (weak) IBOutlet NSTextField *detailTextField;
+
 @end

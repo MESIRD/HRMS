@@ -14,4 +14,9 @@
 
 #import "NSString+validation.h"
 
+
+
+
+#define WINDOW_SIZE [NSApp mainWindow].frame.size
+
 #endif /* HRMSPrefix_pch */
