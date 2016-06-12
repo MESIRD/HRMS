@@ -33,6 +33,9 @@
 		F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74A1D07ACA500BB31E5 /* CSVResolver.m */; };
 		F545F74E1D07ACE700BB31E5 /* CSVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F74D1D07ACE700BB31E5 /* CSVModel.m */; };
 		F545F7511D07AE8F00BB31E5 /* CSVDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */; };
+		F56FA48E1D0D67EF00D312F0 /* HRMImportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56FA48D1D0D67EF00D312F0 /* HRMImportWindow.xib */; };
+		F56FA4921D0D687900D312F0 /* HRMImportWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F56FA4911D0D687900D312F0 /* HRMImportWindow.m */; };
+		F56FA4941D0D69B300D312F0 /* HRMFileImportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56FA4931D0D69B300D312F0 /* HRMFileImportView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,10 @@
 		F545F74D1D07ACE700BB31E5 /* CSVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVModel.m; path = Utils/CSVResolver/CSVModel.m; sourceTree = "<group>"; };
 		F545F74F1D07AE8F00BB31E5 /* CSVDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSVDataObject.h; path = Utils/CSVResolver/CSVDataObject.h; sourceTree = "<group>"; };
 		F545F7501D07AE8F00BB31E5 /* CSVDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSVDataObject.m; path = Utils/CSVResolver/CSVDataObject.m; sourceTree = "<group>"; };
+		F56FA48D1D0D67EF00D312F0 /* HRMImportWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HRMImportWindow.xib; path = Import/Nib/HRMImportWindow.xib; sourceTree = "<group>"; };
+		F56FA4901D0D687900D312F0 /* HRMImportWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRMImportWindow.h; path = Import/Window/HRMImportWindow.h; sourceTree = "<group>"; };
+		F56FA4911D0D687900D312F0 /* HRMImportWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRMImportWindow.m; path = Import/Window/HRMImportWindow.m; sourceTree = "<group>"; };
+		F56FA4931D0D69B300D312F0 /* HRMFileImportView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HRMFileImportView.xib; path = Import/Nib/HRMFileImportView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,8 @@
 		D71AF4521D0A7A3E00B632B2 /* Import */ = {
 			isa = PBXGroup;
 			children = (
+				F56FA48F1D0D681A00D312F0 /* Window */,
+				F56FA48C1D0D678800D312F0 /* Nib */,
 				D71AF45B1D0A801B00B632B2 /* View */,
 				D71AF45A1D0A801000B632B2 /* Controller */,
 			);
@@ -301,6 +310,24 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		F56FA48C1D0D678800D312F0 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				F56FA48D1D0D67EF00D312F0 /* HRMImportWindow.xib */,
+				F56FA4931D0D69B300D312F0 /* HRMFileImportView.xib */,
+			);
+			name = Nib;
+			sourceTree = "<group>";
+		};
+		F56FA48F1D0D681A00D312F0 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				F56FA4901D0D687900D312F0 /* HRMImportWindow.h */,
+				F56FA4911D0D687900D312F0 /* HRMImportWindow.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,7 +391,9 @@
 				D71AF4741D0A84EA00B632B2 /* Info.plist in Resources */,
 				D742F9931D05DF970036B273 /* Assets.xcassets in Resources */,
 				D71AF4701D0A84CD00B632B2 /* Localizable.strings in Resources */,
+				F56FA48E1D0D67EF00D312F0 /* HRMImportWindow.xib in Resources */,
 				D742F9961D05DF970036B273 /* Main.storyboard in Resources */,
+				F56FA4941D0D69B300D312F0 /* HRMFileImportView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +454,7 @@
 			files = (
 				D7A2B4781D0B2F9C00D1FC66 /* NSString+Validation.m in Sources */,
 				D71D6B2F1D0C0C2E00FC0375 /* HRMMainWindowController.m in Sources */,
+				F56FA4921D0D687900D312F0 /* HRMImportWindow.m in Sources */,
 				F545F74B1D07ACA500BB31E5 /* CSVResolver.m in Sources */,
 				D7A2B46F1D0B2A7000D1FC66 /* NSString+Date.m in Sources */,
 				D71D6B281D0C040900FC0375 /* HRMImportingViewController.m in Sources */,

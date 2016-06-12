@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="ZjF-tx-cNF" customClass="HRMFileImportView">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6la-zu-vIx">
+                    <rect key="frame" x="249" y="399" width="303" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="7AY-Rm-h5U"/>
+                        <constraint firstAttribute="width" constant="299" id="Uzq-i3-jBa"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="IUR-df-1b3">
+                        <font key="font" metaFont="system" size="18"/>
+                        <string key="title">First time using HRMS?
+Start with importing your data!</string>
+                        <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="df7-eC-F8T">
+                    <rect key="frame" x="338" y="292" width="124" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="QTg-ZC-FKw"/>
+                        <constraint firstAttribute="height" constant="17" id="xgx-sF-YWt"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag your file here" id="fxF-qo-QnC">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-c1-IzF">
+                    <rect key="frame" x="329" y="258" width="142" height="84"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="import_border" id="kB5-wY-l09"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gSj-UQ-9a6">
+                    <rect key="frame" x="327" y="258" width="146" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="142" id="d03-PJ-cIR"/>
+                        <constraint firstAttribute="height" constant="84" id="i7J-vI-3gf"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" allowsEditingTextAttributes="YES" id="gmh-qT-AuL">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rbX-ea-lZ6">
+                    <rect key="frame" x="255" y="200" width="291" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="287" id="elA-gB-IQN"/>
+                        <constraint firstAttribute="height" constant="17" id="re8-CT-Vd8"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Only CSV type is acceptable at present" id="fBt-gA-IYq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6P0-c1-IzF" firstAttribute="top" secondItem="gSj-UQ-9a6" secondAttribute="top" id="3zH-gM-veT"/>
+                <constraint firstItem="df7-eC-F8T" firstAttribute="centerY" secondItem="6P0-c1-IzF" secondAttribute="centerY" id="4xm-rg-NWD"/>
+                <constraint firstItem="gSj-UQ-9a6" firstAttribute="centerX" secondItem="ZjF-tx-cNF" secondAttribute="centerX" id="9bZ-eL-lSI"/>
+                <constraint firstItem="rbX-ea-lZ6" firstAttribute="top" secondItem="gSj-UQ-9a6" secondAttribute="bottom" constant="41" id="GTy-9J-GUc"/>
+                <constraint firstItem="gSj-UQ-9a6" firstAttribute="centerY" secondItem="ZjF-tx-cNF" secondAttribute="centerY" id="HUn-EI-VOF"/>
+                <constraint firstItem="6P0-c1-IzF" firstAttribute="bottom" secondItem="gSj-UQ-9a6" secondAttribute="bottom" id="M0d-uK-CME"/>
+                <constraint firstItem="6la-zu-vIx" firstAttribute="centerX" secondItem="ZjF-tx-cNF" secondAttribute="centerX" id="YJI-6T-FkT"/>
+                <constraint firstItem="df7-eC-F8T" firstAttribute="centerX" secondItem="6P0-c1-IzF" secondAttribute="centerX" id="Zaq-XD-o7o"/>
+                <constraint firstItem="rbX-ea-lZ6" firstAttribute="centerX" secondItem="ZjF-tx-cNF" secondAttribute="centerX" id="qa6-ZT-715"/>
+                <constraint firstItem="6P0-c1-IzF" firstAttribute="leading" secondItem="gSj-UQ-9a6" secondAttribute="leading" id="ruj-fh-gIk"/>
+                <constraint firstItem="6P0-c1-IzF" firstAttribute="trailing" secondItem="gSj-UQ-9a6" secondAttribute="trailing" id="xIb-Ln-ZuS"/>
+                <constraint firstItem="gSj-UQ-9a6" firstAttribute="top" secondItem="6la-zu-vIx" secondAttribute="bottom" constant="57" id="ztX-tP-HuH"/>
+            </constraints>
+            <connections>
+                <outlet property="detailTextField" destination="rbX-ea-lZ6" id="a1N-Tj-1NT"/>
+                <outlet property="fileImportPlaceholderTextField" destination="df7-eC-F8T" id="pos-Nk-ZHY"/>
+                <outlet property="fileImportTextField" destination="gSj-UQ-9a6" id="rpE-05-s2L"/>
+                <outlet property="guideTextField" destination="6la-zu-vIx" id="yeR-cZ-yLq"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="import_border" width="140" height="80"/>
+    </resources>
+</document>

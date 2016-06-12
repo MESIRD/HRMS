@@ -17,16 +17,10 @@
 
 @interface HRMImportViewController () <NSTextFieldDelegate>
 
-@property (weak) IBOutlet HRMFileImportView *fileImportView;
 @property (weak) IBOutlet NSTextField *guideTextField;
 @property (weak) IBOutlet NSTextField *fileImportTextField;
 @property (weak) IBOutlet NSTextField *fileImportPlaceholderTextField;
 @property (weak) IBOutlet NSTextField *detailTextField;
-
-@property (weak) IBOutlet HRMImportingView *fileImportingView;
-@property (weak) IBOutlet NSTextField         *guideTextField;
-@property (weak) IBOutlet NSProgressIndicator *progressIndicator;
-
 
 @property (assign) BOOL isImported;
 

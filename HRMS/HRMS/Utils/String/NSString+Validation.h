@@ -16,4 +16,7 @@
 /** check whether a string is empty ("" is a empty string, but "   " is not)*/
 - (BOOL)isEmpty;
 
+/** check whether a string is a valid path*/
+- (BOOL)isValidPath;
+
 @end
